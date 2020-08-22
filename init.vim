@@ -53,6 +53,8 @@ endif
 map <C-n> :NERDTreeToggle<CR>
 
 command! PackUpdate call minpac#update('', {'do': 'call minpac#status()'})
+command! PackClean call minpac#clean()
+command! PackStatus call minpac#status()
 
 let g:rainbow_active = 1
 
